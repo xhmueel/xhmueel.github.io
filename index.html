@@ -6,30 +6,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Samuel Braz Pinto</title>
         <link rel="stylesheet" href="style.css">
-        <!-- Add Font Awesome CDN link -->
         <script src="https://kit.fontawesome.com/ad2a21ecce.js" crossorigin="anonymous"></script>
     </head>
 
 
 <body>
-
 <div id="top-bar"></div>
 
 <div id="header">
     <div class="container">
         <nav>
             <ul>
-                <li><a href="#">ABOUT ME</a></li>
-                <li><a href="#">MY GAMES</a></li>
-                <li><a href="#">RESUME</a></li>
-                <li><a href="#">CONTACTS</a></li>
+                <li><a href="#header">ABOUT ME</a></li>
+                <li><a href="#about">MY PROJECTS</a></li>
+                <li><a href="#resume">RESUME</a></li>
+                <li><a href="#contact">CONTACTS</a></li>
             </ul>
         </nav>
         <div class="header-text">
             <p>Hello!</p>
-            <h1>My name is <span>Samuel Braz Pinto</span> and an aspiring Game Designer.<br><br>
+            <h1>
+                My name is <span>Samuel Braz Pinto</span> and I am an aspiring Game Designer.<br><br>
                 I am currently in my Master's Degree in Computer Science and Engineering with a specialization in Games.<br><br>
-                I am looking for an internship as a Game Designer or Game Programmer. You can find my contacts here.</h1>
+                I am looking for an internship as a Game Designer or Game Programmer. You can find my contacts here.
+            </h1>
         </div>
     </div>
 </div>
@@ -37,17 +37,21 @@
 <!-- --------My Games---------- -->
 <div id="about">
     <div class="container">
-        <h1 class="main-title">My Games
-            <p>The following are some of the games I've made alone or as a team as a Game Designer and Programmer.</p>
-            <p>There is more to see on my <a href="https://xhmueel.itch.io/" target="blank">Itch.io</a> page.</p>
+        <h1 class="main-title">My Projects
+            <p>The following are some of the games I've made alone or as a team, working as a Game Designer and Programmer.<br>
+            Some of these are also university projects, including Computer Graphics and UX.
+            For more information click on the images.</p>
+            <p>There is also more to see on my <a href="https://xhmueel.itch.io/" target="blank">Itch.io</a> page.</p>
         </h1> 
         <div class="row">
-            <div class="about-col-1">
-                <img src="images/immortal-journey-title.png">
+            <div class="about">
+                <img id="immortal-journey-id" src="images/immortal-journey-title.png">
+                <div class="layer">
+                    <h3>ImMortal Journey</h3>
+                </div>
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">Immortal Journey</h1>
-                <p>On the edge of history an immortal being exists. Death, unhappy with their disregard for life, deprives them of their immortality.  They then embarks on a journey to get it back. But now, with mortality as a factor, they must face fear and danger head on or perish. This journey will surely awaken new emotions, but in the end... Will they regain their immortality?</p>
+            <div class="about">
+                <img id="hello-narrator-id" src="images/hello-narrator-title.png">
             </div>
         </div>
     </div>
@@ -64,7 +68,7 @@
                 My experience regarding game development is mainly with Unity (C#) and Godot, but also with some experience in Unreal Engine 5.<br><br>
                 I'm looking for an internship in the games industry as a Game Designer or Programmer, so if you have any opportunities feel free to contact me.
             </h1>
-            <a href="" class="btn">Download CV</a>
+            <a href="images/SamuelBrazPinto_CV3.pdf" download class="btn">Download CV</a>
         </div>
     </div>
  </div>
@@ -77,6 +81,9 @@
                 <h1 class="sub-title">CONTACTS</h1>
                 <p><i class="fa-solid fa-envelope"></i> <a href="mailto:samuelbrazpinto1@gmail.com">samuelbrazpinto1@gmail.com</a></p>
                 <p><i class="fa-solid fa-phone"></i> +351 969 404 886</p>
+                <!-- <p><i class="fa-brands fa-linkedin"></i> https://www.linkedin.com/in/samuelbrazpinto/</p>
+                <p><i class="fa-brands fa-itch-io"></i> https://xhmueel.itch.io/</p>
+                <p><i class="fa-brands fa-github"></i> https://github.com/xhmueel</p> -->
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/samuelbrazpinto/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
                     <a href="https://xhmueel.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>        
@@ -87,8 +94,7 @@
     </div>
 </div>
 
-
-
+<script src="main.js"></script>
 
 </body>
 </html>

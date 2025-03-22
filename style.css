@@ -8,10 +8,13 @@
 body{
     background: #443627;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 #top-bar {
     width: 100%;          /* Make the bar span the full width of the screen */
-    height: 75px;          /* Set the height of the bar */
+    height: 9%;          /* Set the height of the bar */
     background-color: #D98324; /* Set the color of the bar (you can change this to any color you prefer) */
     position: absolute;    /* Position the bar at the top */
     top: 0;               /* Place the bar at the very top of the page */
@@ -21,7 +24,6 @@ body{
 
 #header{ 
     width: 100%;
-    height: 100vh;
 }
 .container{
     padding : 10px 10%;
@@ -64,7 +66,7 @@ nav ul li a:hover::after{
 
 .header-text{
     color: #fff;
-    margin-top: 20%;
+    padding: 10% 0px;
     font-size: 40px;
 }
 
@@ -88,7 +90,7 @@ nav ul li a:hover::after{
 .main-title{
     font-size: 60px;
     text-align: left;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .main-title p{
@@ -98,22 +100,48 @@ nav ul li a:hover::after{
 }
 
 .row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
 }
 
-.about-col-1{
-    flex-basis: 35%;
-}
-.about-col-1 img{
-    width: 100%;
+.about{
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
 
-.about-col-2{
-    flex-basis: 60%;
+.about img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s ease;
+    object-fit: cover;
+}
 
+.layer{
+    width: 100%;
+    height: 15%;
+    background: linear-gradient(rgba(217, 131, 36, 0.0), #EFDCAB);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+}
+
+
+
+.about img:hover{
+    transform: scale(1.05);
 }
 
 .sub-title{
@@ -150,7 +178,7 @@ a{
     color: #EFDCAB;
 }
 
-/* Style the .btn class to make it look like a button */
+
 .btn {
     display: inline-block;
     padding: 10px 20px; 
@@ -169,6 +197,9 @@ a{
 }
 
 /* -------Contact-------- */
+#contact{
+    margin-top: 5%;
+}   
 
 .contact-left{
     flex-basis: 35%;
@@ -200,3 +231,129 @@ a{
     transform: translateY(-7px);
 }
 
+
+/* ---------modal--------- */
+.modal{
+    --gap: 25px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: var(--gap);
+    background: rgba(0, 0, 0, 0.5);
+
+    overflow: hidden;
+
+}
+
+.modal-inner{
+    background: #443627;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    border-radius: 4px;
+
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.modal-top{
+    display: flex;
+    align-items: center;
+    background: #D98324;
+    
+}
+
+.modal-title{
+    flex-grow: 1;
+    padding: 0 var(--gap);
+    font-size: 20px;
+}
+
+.modal-close{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: var(--gap);
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.modal-content{
+    margin-top: 2%;
+    padding: 0 var(--gap);
+    line-height: 1.5;
+}
+
+.modal-video {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: var(--gap) 0; 
+}
+
+.modal-itch{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: var(--gap) 0; 
+}
+
+.modal-pointers{
+    margin-top: 2%;
+    padding: 0 var(--gap);
+    line-height: 1.5;
+}
+
+.modal-pointers ul{
+    margin-top: 2%;
+    padding: 0 var(--gap);
+    line-height: 1.5;
+}
+
+.modal-pointers ul li {
+    margin-bottom: 10px; 
+}
+
+.modal-images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5px;
+    margin-top: 30px;
+}
+
+.modal-images img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px;
+    padding: 0 var(--gap); 
+    
+}
+
+
+.modal-bottom{
+    text-align: right;
+    padding: 0 var(--gap) var(--gap) var(--gap);
+}
+
+.modal-button{
+    display: inline-block;
+    padding: 6px 12px;
+    background: #D98324;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.modal-button:hover{
+    background: #EFDCAB;
+}
