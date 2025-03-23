@@ -97,6 +97,7 @@ document.getElementById("immortal-journey-id").addEventListener("click", functio
             contributions: [
                 "<strong>Design</strong>: Level Design, Gameplay Elements, Gameplay Loop and other components.",
                 "<strong>Programming</strong>: Enemies, Shaders, Player Movement and other functionality.",
+                "<strong>Writing</strong>: NPC Dialogue and the Overall Story.",
                 "<strong>Music</strong>: Composed the music for the game.",
             ]
         },
@@ -127,7 +128,8 @@ document.getElementById("hello-narrator-id").addEventListener("click", function(
         "Hello Narrator",
 
         `<p>"Hello, Narrator" is a Game Dev Técnico's submission to GGJ 24 through the remote Galway jam site.<br><br>
-        It's a game incorporating the theme of "Make me Laugh", where the objective is to make the grumpy narrator laugh by tickling his foot.</p>
+        It's a game incorporating the theme of "Make me Laugh", where the objective is to make the grumpy narrator laugh
+        by dressing yourself with outrageous clothes, solving a riddle and finally by tickling his giant foot.</p>
         `,
 
         "",
@@ -137,15 +139,13 @@ document.getElementById("hello-narrator-id").addEventListener("click", function(
 
         {
             mainFeatures: [
-                "<strong>Compelling Story</strong>: an adventure of discovery and realization of life's value.",
-                "<strong>Courage Resource</strong>: generates an important risk and reward dynamic, making the player stronger or weaker depending on the amount of courage held.",
-                "<strong>The Realm of the Dead</strong>: provides extra depth to the level design and a way to avoid danger, but drains courage.",
-                "<strong>Audio/Visual Transformation</strong>: In order to convey the character's emotions, the visuals and audio of the game change dynamically."
+                "<strong>Voiced Narrator</strong>: a grumpy narrator that reacts to the player's actions in a funny way.",
+                "<strong>A LOT of Comedy</strong>: everything in this game is to make people laugh!",
             ],
             contributions: [
-                "<strong>Design</strong>: Level Design, Gameplay Elements, Gameplay Loop and other components.",
-                "<strong>Programming</strong>: Enemies, Shaders, Player Movement and other functionality.",
-                "<strong>Music</strong>: Composed the music for the game.",
+                "<strong>Design</strong>: Fashion Designer. (ʘ‿ʘ)",
+                "<strong>Programming</strong>: Character creation level and foot tickling level.",
+                "<strong>Writing</strong>: Wrote the dialogue for the narrator.",
             ]
         },
 
@@ -154,7 +154,7 @@ document.getElementById("hello-narrator-id").addEventListener("click", function(
                 src: "images/hello-narrator-1.png"
             },
             {
-                src: "images/hello-narrator-2.png"
+                src: "images/hello-narrator-4.png"
             }
         ],
         
@@ -170,25 +170,49 @@ document.getElementById("hello-narrator-id").addEventListener("click", function(
     );
 });
 
-// showModal(
-//     "Immortal Journey",
+document.getElementById("mirrored-id").addEventListener("click", function() {
+    showModal(
+        "Mirrored",
 
-//     `<p>On the edge of history an immortal being exists. Death, unhappy with their disregard for life, deprives them of their immortality. 
-//     They then embark on a journey to get it back. But now, with mortality as a factor, they must face fear and danger head-on or perish.</p>
-//     `,
+        `<p>A young girl finds herself in a public bathroom. She doesn't know how she got there and she is covered in wounds.
+        <br>Why doesn't she remember it? Why is she injured?
+        <br><br>This game was made for 02A2 VN Jam 2024, a micro Visual Novel jam with strict asset limitations and a 1000 words limit.</p>
+        `,
 
-//     `<iframe width="560" height="315" src="https://www.youtube.com/embed/ly36kn0ug4k?si=YLeVCYI1-JKB0V1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-//     `,
+        "",
 
-//     "",
+        `<a href="https://despaircode777.itch.io/mirrored" target="_blank">Available on Itch.io</a>
+        `,
 
-//     [
-//         {
-//             label: "Got it!",
-//             onClick: (modal) => {
-//                 console.log("Modal closed.");
-//             },
-//             triggerClose: true
-//         }
-//     ]
-// );
+        {
+            mainFeatures: [
+                "<strong>An Unraveling Mystery</strong>: As the story proceeds, the mystery will be revealed. If only a little...",
+                "<strong>Tense Atmosphere</strong>: The game is designed to make the player feel uneasy and fearful for what comes next.",
+            ],
+            contributions: [
+                "<strong>Programming</strong>: Implemented the game's narrative.",
+                "<strong>Writing</strong>: Wrote the dialogue.",
+                "<strong>Music</strong>: Composed the music for the game.",
+            ]
+        },
+
+        [
+            {
+                src: "images/mirrored-1.jpg"
+            },
+            {
+                src: "images/mirrored-2.png"
+            }
+        ],
+        
+        [
+            {
+                label: "Got it!",
+                onClick: (modal) => {
+                    console.log("Modal closed.");
+                },
+                triggerClose: true
+            }
+        ]
+    );
+});
