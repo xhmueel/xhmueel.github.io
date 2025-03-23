@@ -12,14 +12,14 @@ html{
     scroll-behavior: smooth;
 }
 
-#top-bar {
+.top-bar {
     width: 100%;          /* Make the bar span the full width of the screen */
-    height: 9%;          /* Set the height of the bar */
+    height: 75px;          /* Set the height of the bar */
     background-color: #D98324; /* Set the color of the bar (you can change this to any color you prefer) */
     position: absolute;    /* Position the bar at the top */
     top: 0;               /* Place the bar at the very top of the page */
     left: 0;
-    z-index: -1;        /* Ensure the bar stays on top of all other content */
+    z-index: 0;        /* Ensure the bar stays on top of all other content */
 }
 
 #header{ 
@@ -34,6 +34,8 @@ nav{
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
+    z-index: 1;
+    margin-top: 10px;
 }
 
 nav ul li{
@@ -68,6 +70,7 @@ nav ul li a:hover::after{
     color: #fff;
     padding: 10% 0px;
     font-size: 40px;
+    margin-top: 40px;
 }
 
 .header-text h1{
@@ -430,4 +433,29 @@ a{
 
 .modal-button:hover{
     background: #EFDCAB;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row; 
+        align-items: center; 
+    }
+
+    nav ul {
+        width: 100%; 
+        padding: 0;
+        display: flex;
+        align-items: center; 
+    }
+
+    nav ul li {
+        margin: 10px 10px; /* Add spacing between items */
+    }
+
+    nav ul li a {
+        display: flex;
+        align-items: center;
+    }
+
 }

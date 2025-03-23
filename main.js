@@ -301,10 +301,10 @@ document.getElementById("cgj-id").addEventListener("click", function() {
 
         [
             {
-                src: "images/DIIC-1.png"
+                src: "images/cgj-1.png"
             },
             {
-                src: "images/DIIC-2.png"
+                src: "images/cgj-2.png"
             }
         ],
         
