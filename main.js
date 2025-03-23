@@ -216,3 +216,51 @@ document.getElementById("mirrored-id").addEventListener("click", function() {
         ]
     );
 });
+
+document.getElementById("colorblind-id").addEventListener("click", function() {
+    showModal(
+        "Mirrored",
+
+        `<p>A young girl finds herself in a public bathroom. She doesn't know how she got there and she is covered in wounds.
+        <br>Why doesn't she remember it? Why is she injured?
+        <br><br>This game was made for 02A2 VN Jam 2024, a micro Visual Novel jam with strict asset limitations and a 1000 words limit.</p>
+        `,
+
+        "",
+
+        `<a href="https://www.figma.com/proto/2c1YTYidyxcxXrJV5lg77q/Untitled?node-id=47-1473&starting-point-node-id=47%3A1473&t=ccjXwNOTtGCgoTxU-1" target="_blank">Available on Itch.io</a>
+        `,
+
+        {
+            mainFeatures: [
+                "<strong>An Unraveling Mystery</strong>: As the story proceeds, the mystery will be revealed. If only a little...",
+                "<strong>Tense Atmosphere</strong>: The game is designed to make the player feel uneasy and fearful for what comes next.",
+            ],
+            contributions: [
+                "<strong>Programming</strong>: Implemented the game's narrative.",
+                "<strong>Writing</strong>: Wrote the dialogue.",
+                "<strong>Music</strong>: Composed the music for the game.",
+            ]
+        },
+
+        [
+            {
+                src: "images/mirrored-1.jpg"
+            },
+            {
+                src: "images/mirrored-2.png"
+            }
+        ],
+        
+        [
+            {
+                label: "Got it!",
+                onClick: (modal) => {
+                    console.log("Modal closed.");
+                },
+                triggerClose: true
+            }
+        ]
+    );
+});
+
