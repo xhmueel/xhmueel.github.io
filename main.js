@@ -81,7 +81,7 @@ document.getElementById("immortal-journey-id").addEventListener("click", functio
         This game was done in the scope of the MDJ course at Instituto Superior Técnico.</p>
         `,
 
-        `<iframe width="560" height="315" src="https://www.youtube.com/embed/ly36kn0ug4k?si=YLeVCYI1-JKB0V1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        `<iframe width="560" height="315" src="https://www.youtube.com/embed/gTWFk3XGgc0?si=mDNSBzVQkjHRR7vx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         `,
 
         `<a href="https://chiefbat.itch.io/immortal-journey" target="_blank">Available on Itch.io</a>
@@ -219,36 +219,41 @@ document.getElementById("mirrored-id").addEventListener("click", function() {
 
 document.getElementById("colorblind-id").addEventListener("click", function() {
     showModal(
-        "Mirrored",
+        "Educational Game that tests Colorblindness on Children",
 
-        `<p>A young girl finds herself in a public bathroom. She doesn't know how she got there and she is covered in wounds.
-        <br>Why doesn't she remember it? Why is she injured?
-        <br><br>This game was made for 02A2 VN Jam 2024, a micro Visual Novel jam with strict asset limitations and a 1000 words limit.</p>
+        `<p>This prototype is an educational game, focused on children from
+            5-8 years old, intended to be played in class, where Ishihara tests
+            are intercalated with normal numbers.<br><br>
+            We intend for this to be
+            an effective way to discover early on in the lives of children if they
+            are colorblind, which is the opportunity we identified, but also a
+            educational component to learn numbers.<br><br>
+            This project was done in the scope of the DIIC course at Instituto Superior Técnico.
+        </p>
         `,
 
         "",
 
-        `<a href="https://www.figma.com/proto/2c1YTYidyxcxXrJV5lg77q/Untitled?node-id=47-1473&starting-point-node-id=47%3A1473&t=ccjXwNOTtGCgoTxU-1" target="_blank">Available on Itch.io</a>
+        `<a href="https://www.figma.com/proto/2c1YTYidyxcxXrJV5lg77q/Untitled?node-id=47-1473&starting-point-node-id=47%3A1473&t=ccjXwNOTtGCgoTxU-1" target="_blank">Available on Figma</a>
         `,
 
         {
             mainFeatures: [
-                "<strong>An Unraveling Mystery</strong>: As the story proceeds, the mystery will be revealed. If only a little...",
-                "<strong>Tense Atmosphere</strong>: The game is designed to make the player feel uneasy and fearful for what comes next.",
+                "<strong>The Test as a Game</strong>: Uses the positives of an interactive and fun way for kids to learn to \"gamify\" the Ishihara test.",
+                "<strong>Educational Component</strong>: Utilizes the need for the identification of the numbers in the game for both the colorblind testing and learning the numbers.",
             ],
             contributions: [
-                "<strong>Programming</strong>: Implemented the game's narrative.",
-                "<strong>Writing</strong>: Wrote the dialogue.",
-                "<strong>Music</strong>: Composed the music for the game.",
+                "<strong>Design Process</strong>: Designed a solution by following the Double Diamond Design Process.",
+                "<strong>Prototyping</strong>: Prototyped a solution using Figma.",
             ]
         },
 
         [
             {
-                src: "images/mirrored-1.jpg"
+                src: "images/DIIC-1.png"
             },
             {
-                src: "images/mirrored-2.png"
+                src: "images/DIIC-2.png"
             }
         ],
         
@@ -264,3 +269,53 @@ document.getElementById("colorblind-id").addEventListener("click", function() {
     );
 });
 
+
+
+document.getElementById("cgj-id").addEventListener("click", function() {
+    showModal(
+        "Shader Project (C++ & OpenGL)",
+
+        `<p>The main concepts that are implemented in this project are shaders and textures.<br>
+            It was also implemented a non-photorealistic lighting model (Cel Shading) and a non physically-based "photorealistic" lighting model (Phong model).<br>
+            Procedural noise was used to create textures for the meshes.<br><br>
+            This project was done in the scope of the CGJ course at Instituto Superior Técnico.
+        </p>
+        `,
+
+        `
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0EiYpFecn6E?si=VlcYaQCjy3PQNLTK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        `,
+
+        `<a href="https://github.com/xhmueel/GroupLabs.3rdProjectCGJ_23-24" target="_blank">Available on Github</a>
+        `,
+
+        {
+            mainFeatures: [
+                "<strong>Having two Shaders</strong>: One for the Cel Shading and another for the Phong model.",
+                "<strong>Procedural noise for Textures</strong>: Used noise generation in the shaders to create textures.",
+            ],
+            contributions: [
+                "<strong>Programming</strong>: Shaders, Textures and Lighting Models.",
+            ]
+        },
+
+        [
+            {
+                src: "images/DIIC-1.png"
+            },
+            {
+                src: "images/DIIC-2.png"
+            }
+        ],
+        
+        [
+            {
+                label: "Got it!",
+                onClick: (modal) => {
+                    console.log("Modal closed.");
+                },
+                triggerClose: true
+            }
+        ]
+    );
+});
