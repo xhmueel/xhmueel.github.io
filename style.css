@@ -71,6 +71,7 @@ nav ul li a:hover::after{
     padding: 10% 0px;
     font-size: 40px;
     margin-top: 40px;
+    line-height: 40px;
 }
 
 .header-text h1{
@@ -381,6 +382,12 @@ a{
     justify-content: center; 
     align-items: center; 
     margin: var(--gap) 0; 
+}
+
+.modal-description{
+    margin-top: 2%;
+    padding: 0 var(--gap);
+    line-height: 1.5;
 }
 
 .modal-pointers{

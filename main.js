@@ -1,4 +1,4 @@
-function showModal(titleHtml, contentHtml, videoYt, itchIoLink, pointers, images, buttons){
+function showModal(titleHtml, contentHtml, videoYt, itchIoLink, description, pointers, images, buttons){
     const modal = document.createElement("div");
 
     modal.classList.add("modal");
@@ -14,6 +14,7 @@ function showModal(titleHtml, contentHtml, videoYt, itchIoLink, pointers, images
             <div class="modal-video">${videoYt}</div>
             <div class="modal-images"></div>
             <div class="modal-itch">${itchIoLink}</div>
+            <div class="modal-description">${description}</div>
             <div class="modal-pointers">
                 ${pointers ? `
                     <h3>Key Features:</h3>
@@ -78,13 +79,17 @@ document.getElementById("immortal-journey-id").addEventListener("click", functio
         "ImMortal Journey",
 
         `<p> You will play as an immortal character whose immortality was stolen by Death. You need to complete a continuous series of challenges, such as fighting and platforming, intertwined with peaceful resting areas. Your objective is to reach the end of your journey to confront Death and take back what was stolen.<br><br>
-        This game was done in the scope of the MDJ course at Instituto Superior Técnico.</p>
+        This game was done in the scope of the Methodology of Development of Games course at Instituto Superior Técnico.</p>
         `,
 
         `<iframe width="560" height="315" src="https://www.youtube.com/embed/gTWFk3XGgc0?si=mDNSBzVQkjHRR7vx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         `,
 
         `<a href="https://chiefbat.itch.io/immortal-journey" target="_blank">Available on Itch.io</a>
+        `,
+        `<p>This project was a great way to learn about the overall development process of a game. The feedback received ranging from casual gamers to industry professionals was very educative and rewarding.
+        Our team also worked alongside both an audio design student and two writing students, all from different schools. It was a very fullfilling experience, and we were pround of how it turned out.
+        </p>
         `,
 
         {
@@ -137,6 +142,9 @@ document.getElementById("hello-narrator-id").addEventListener("click", function(
         `<a href="https://draike.itch.io/hello-narrator" target="_blank">Available on Itch.io</a>
         `,
 
+        `
+        `,
+
         {
             mainFeatures: [
                 "<strong>Voiced Narrator</strong>: a grumpy narrator that reacts to the player's actions in a funny way.",
@@ -176,12 +184,17 @@ document.getElementById("mirrored-id").addEventListener("click", function() {
 
         `<p>A young girl finds herself in a public bathroom. She doesn't know how she got there and she is covered in wounds.
         <br>Why doesn't she remember it? Why is she injured?
-        <br><br>This game was made for 02A2 VN Jam 2024, a micro Visual Novel jam with strict asset limitations and a 1000 words limit.</p>
+        <br><br>This game was made for the 02A2 VN Jam 2024.</p>
         `,
 
         "",
 
         `<a href="https://despaircode777.itch.io/mirrored" target="_blank">Available on Itch.io</a>
+        `,
+
+        `This was my first time working on a Visual Novel, and it was a great experience, but it was also quite challenging due to a lot of restrictions that were in place. One of them being a maximum of 1000 words.<br>
+        I pushed myself by crafting a narrative based on a mystery, where the player finds himself in a situation that he doesn't understand.<br>
+        And as the story progresses, some of the mystery is revealed, but also more questions arise, leaving interpretations to each individual person.
         `,
 
         {
@@ -228,13 +241,17 @@ document.getElementById("colorblind-id").addEventListener("click", function() {
             an effective way to discover early on in the lives of children if they
             are colorblind, which is the opportunity we identified, but also a
             educational component to learn numbers.<br><br>
-            This project was done in the scope of the DIIC course at Instituto Superior Técnico.
+            This project was done in the scope of the Studio of Design and Interaction course at Instituto Superior Técnico.
         </p>
         `,
 
         "",
 
         `<a href="https://www.figma.com/proto/2c1YTYidyxcxXrJV5lg77q/Untitled?node-id=47-1473&starting-point-node-id=47%3A1473&t=ccjXwNOTtGCgoTxU-1" target="_blank">Available on Figma</a>
+        `,
+
+        `<p>This project challenged us to find an issue that a minority group struggles with and design a solution for it with technology. 
+        We had to employ several methods to gather information such as secondary research and interviews. We also had as a co-designer a person that faced the struggle of not knowing he was colorblind when he was a child.</p>
         `,
 
         {
@@ -269,8 +286,6 @@ document.getElementById("colorblind-id").addEventListener("click", function() {
     );
 });
 
-
-
 document.getElementById("cgj-id").addEventListener("click", function() {
     showModal(
         "Shader Project (C++ & OpenGL)",
@@ -289,10 +304,17 @@ document.getElementById("cgj-id").addEventListener("click", function() {
         `<a href="https://github.com/xhmueel/GroupLabs.3rdProjectCGJ_23-24" target="_blank">Available on Github</a>
         `,
 
+        `<p>This project helped me get better with C++ (and C) as well as an understanding of 3D space, 
+        vector and matrix operations. It was also a good introduction to shader programming.</p>
+        `,
+
         {
             mainFeatures: [
-                "<strong>Having two Shaders</strong>: One for the Cel Shading and another for the Phong model.",
-                "<strong>Procedural noise for Textures</strong>: Used noise generation in the shaders to create textures.",
+                "Cel Shading and Phong model.",
+                "Procedurally generated textures by using perlin noise.",
+                "Orbital camera.",
+                "Hierachical scene graph.",
+                "Serialization of the scene in JSON",
             ],
             contributions: [
                 "<strong>Programming</strong>: Shaders, Textures and Lighting Models.",
