@@ -128,6 +128,59 @@ document.getElementById("immortal-journey-id").addEventListener("click", functio
     );
 });
 
+document.getElementById("words-id").addEventListener("click", function() {
+    showModal(
+        "Words",
+
+        `<p>What do you see? What do you read? What do you hear? What do you feel?<br>
+        <br>
+            This game was a solo project done in Unreal Engine 5 with Blueprints.
+        </p>
+        `,
+
+        ``,
+
+        `<a href="https://xhmueel.itch.io/words" target="_blank">Available on Itch.io</a>
+        `,
+
+        `<p>This project helped me get better understanding of Unreal Engine 5 and its editor. I also learned and deepened my knowledge about multiple components of the engine, 
+        including Materials (Surface, Light Functions and Post Processing), Niagara, Audio and others.</p>
+        `,
+
+        {
+            mainFeatures: [
+                "<strong>A Game as an Artwork</strong>: This was a personal exercise on creating a video game designed to present itself as an artwork.",
+                "<strong>Fragmented</strong>: The words do not come together, and multiple languages are used, making it so that every person will interpret it differently.",
+                "<strong>Sensory Experience</strong>: Multiple dimension of the senses present themselves in multiple ways, all trying to express things in different ways.",
+
+            ],
+            contributions: [
+                "<strong>Programming</strong>: Materials, Niagara, Audio.",
+                "<strong>Writing</strong>: The Words.",
+            ]
+        },
+
+        [
+            {
+                src: "images/words-1.png"
+            },
+            {
+                src: "images/words-2.png"
+            }
+        ],
+        
+        [
+            {
+                label: "Got it!",
+                onClick: (modal) => {
+                    console.log("Modal closed.");
+                },
+                triggerClose: true
+            }
+        ]
+    );
+});
+
 document.getElementById("hello-narrator-id").addEventListener("click", function() {
     showModal(
         "Hello Narrator",
