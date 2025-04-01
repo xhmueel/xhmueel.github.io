@@ -394,3 +394,57 @@ document.getElementById("cgj-id").addEventListener("click", function() {
         ]
     );
 });
+
+document.getElementById("star-id").addEventListener("click", function() {
+    showModal(
+        "Project Star (Unannounced)",
+
+        `<p>Up-and-coming 2D top-down roguelite set in a world where people can control one of the 3 elements 
+        (water, fire and earth), and darkness reigns supreme. Play as an envoy of the stars to put an end to this dark age.<br>
+        Play as the “Star Incarnate”, capable of using all 3 elements, and defeat the darkness. When the “Star Incarnate” dies, 
+        another one is born with pieces of the ancestors' memories, making each “Star Incarnate” stronger and stronger.
+        </p>
+        `,
+
+        `
+        `,
+
+        `
+        `,
+
+        `<p>This is an internal project made within <a href="https://gamedev.tecnico.ulisboa.pt/" target="_blank">GameDev Técnico</a> and consists of a 
+        multidisciplinary team, comprised of artists, sound designers, programmers and game designers.<br>
+        I'm working as a designer and writer. So far, I have designed game elements like enemies, abilities and items, and mechanics like skill trees and PCG.</p>
+        `,
+
+        {
+            mainFeatures: [
+                "<strong>Fast-paced combat using Elemental Powers</strong>: A combat where you constantly are changing elements and dodging enemy attacks, making it fluid, fast-paced and fun.",
+                "<strong>Mastering of abilities through Quests.</strong>: When a run ends, at the start of a new run, the player will be able to permanently learn abilities if he completed the quest associated with them.",
+            ],
+            contributions: [
+                "<strong>Design</strong>: Shaders, Textures and Lighting Models.",
+                "<strong>Writing</strong>: Shaders, Textures and Lighting Models.",
+            ]
+        },
+
+        [
+            // {
+            //     src: "images/cgj-1.png"
+            // },
+            // {
+            //     src: "images/cgj-2.png"
+            // }
+        ],
+        
+        [
+            {
+                label: "Got it!",
+                onClick: (modal) => {
+                    console.log("Modal closed.");
+                },
+                triggerClose: true
+            }
+        ]
+    );
+});
