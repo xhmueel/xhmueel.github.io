@@ -400,9 +400,11 @@ document.getElementById("star-id").addEventListener("click", function() {
         "Project Star (Unannounced)",
 
         `<p>Up-and-coming 2D top-down roguelite set in a world where people can control one of the 3 elements 
-        (water, fire and earth), and darkness reigns supreme. Play as an envoy of the stars to put an end to this dark age.<br>
+        (water, fire and earth) and darkness reigns supreme.<br>
         Play as the “Star Incarnate”, capable of using all 3 elements, and defeat the darkness. When the “Star Incarnate” dies, 
-        another one is born with pieces of the ancestors' memories, making each “Star Incarnate” stronger and stronger.
+        another one is born with pieces of the ancestors' memories, making each “Star Incarnate” stronger and stronger.<br>
+        This is an internal project made within <a href="https://gamedev.tecnico.ulisboa.pt/" target="_blank">GameDev Técnico</a> and consists of a 
+        multidisciplinary team, comprised of artists, sound designers, programmers and game designers.
         </p>
         `,
 
@@ -412,19 +414,22 @@ document.getElementById("star-id").addEventListener("click", function() {
         `
         `,
 
-        `<p>This is an internal project made within <a href="https://gamedev.tecnico.ulisboa.pt/" target="_blank">GameDev Técnico</a> and consists of a 
-        multidisciplinary team, comprised of artists, sound designers, programmers and game designers.<br>
-        I'm working as a designer and writer. So far, I have designed game elements like enemies, abilities and items, and mechanics like skill trees and PCG.</p>
+        `<p>
+        I'm working as a designer and writer. So far, I have designed game elements such as enemies, items, skill trees, and mechanics including abilities and procedural content generation.<br>
+        The development of this game has been a very insightful experience. Collaborating with multiple people across different aspects of the game has strengthened my communication skills 
+        and broadened my overall knowledge of game development.
+        <p>
         `,
 
         {
             mainFeatures: [
-                "<strong>Fast-paced combat using Elemental Powers</strong>: A combat where you constantly are changing elements and dodging enemy attacks, making it fluid, fast-paced and fun.",
-                "<strong>Mastering of abilities through Quests.</strong>: When a run ends, at the start of a new run, the player will be able to permanently learn abilities if he completed the quest associated with them.",
+                "<strong>Combat using Elemental Powers</strong>: A combat where you constantly are changing elements and dodging enemy attacks, making it fluid, fast-paced and fun.",
+                "<strong>Mastering of Abilities</strong>: At the start of a new run, the player will be able to permanently learn abilities if he completed the quest associated with them.",
+                "<strong>Character Development</strong>: Through the actions of the player, both the Star Incarnate and the NPCs personalities and attitudes will change across time."
             ],
             contributions: [
-                "<strong>Design</strong>: Shaders, Textures and Lighting Models.",
-                "<strong>Writing</strong>: Shaders, Textures and Lighting Models.",
+                "<strong>Design</strong>: Enemies, Abilities, Items, PCG, Skill Trees and many more.",
+                "<strong>Writing</strong>: Dialogue, Lore and Characters.",
             ]
         },
 
