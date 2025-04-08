@@ -10,24 +10,24 @@ function showModal(titleHtml, contentHtml, videoYt, itchIoLink, description, poi
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
-            <div class="modal-content">${contentHtml}</div>
-            <div class="modal-video">${videoYt}</div>
-            <div class="modal-images"></div>
-            <div class="modal-itch">${itchIoLink}</div>
-            <div class="modal-description">${description}</div>
             <div class="modal-pointers">
                 ${pointers ? `
-                    <h3>Key Features:</h3>
-                    <ul>
-                        ${pointers.mainFeatures.map(feature => `<li>${feature}</li>`).join("")}
-                    <br>
-                    </ul>
                     <h3>My Contributions:</h3>
                     <ul>
                         ${pointers.contributions.map(contribution => `<li>${contribution}</li>`).join("")}
+                    <br>
+                    </ul>
+                    <h3>Key Features:</h3>
+                    <ul>
+                        ${pointers.mainFeatures.map(feature => `<li>${feature}</li>`).join("")}
                     </ul>
                 ` : ""}
             </div>
+            <div class="modal-description">${description}</div>
+            <div class="modal-video">${videoYt}</div>
+            <div class="modal-images"></div>
+            <div class="modal-itch">${itchIoLink}</div>
+            <div class="modal-content">${contentHtml}</div>
             <div class="modal-bottom"></div>
         </div>
     `;
@@ -155,7 +155,7 @@ document.getElementById("words-id").addEventListener("click", function() {
 
             ],
             contributions: [
-                "<strong>Programming</strong>: Materials, Niagara, Audio.",
+                "<strong>Programming</strong>: Materials, Lighting, Niagara, Audio.",
                 "<strong>Writing</strong>: The Words.",
             ]
         },
