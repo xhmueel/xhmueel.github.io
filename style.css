@@ -2,12 +2,23 @@
     color: #fff;
     margin: 0;
     padding: 0;
-    font-family: 'Verdana', sans-serif;
+    font-family: 'EB_Garamond';
     box-sizing: border-box;
 }
-body{
-    background: #443627;
+@font-face {
+    font-family: 'EB_Garamond';
+    src: url('fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf');
 }
+body{
+    background-image: url('images/n4THV2.jpg'); /* Add your background image to the images folder */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -15,7 +26,7 @@ html{
 .top-bar {
     width: 100%;          /* Make the bar span the full width of the screen */
     height: 75px;          /* Set the height of the bar */
-    background-color: #D98324; /* Set the color of the bar (you can change this to any color you prefer) */
+    background-color: #fff; /* Set the color of the bar (you can change this to any color you prefer) */
     position: absolute;    /* Position the bar at the top */
     top: 0;               /* Place the bar at the very top of the page */
     left: 0;
@@ -27,6 +38,8 @@ html{
 }
 .container{
     padding : 10px 10%;
+
+    
 }
 
 nav{
@@ -34,7 +47,7 @@ nav{
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
-    z-index: 1;
+    z-index: 0;
     margin-top: 10px;
 }
 
@@ -43,10 +56,13 @@ nav ul{
     top: 0; /* Align it to the top */
     left: 0; /* Align it to the left */
     width: 100%; /* Make it span the full width of the page */
-    z-index: 1000; /* Ensure it stays above other elements */
-    background-color: #D98324; /* Add a background color to prevent transparency issues */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-    height: 55px;
+    z-index: 0; /* Ensure it stays above other elements */
+    background-color: rgba(17, 45, 78, 0.4); /* Semi-transparent background */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); /* For Safari support */
+    height: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    z-index: 2;
 }
 
 nav ul li{
@@ -77,12 +93,24 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+
+
 .header-text{
     color: #fff;
-    padding: 10% 0px;
+    padding: 4% 6%;
     font-size: 40px;
     margin-top: 40px;
-    line-height: 40px;
+    line-height: 1.5;
+    margin: 80px auto 40px auto;
+    max-width: 1100px;
+    text-align: left;
+    background: rgba(17,45,78,0.28); /* semi-transparent base */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); /* Safari */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    position: relative;
+    z-index: 0; /* make sure it sits above the page background */
 }
 
 .header-text h1{
@@ -104,14 +132,26 @@ nav ul li a:hover::after{
 
 .main-title{
     font-size: 60px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 50px;
+
 }
 
 .main-title p{
     font-size: 20px;
     margin-top: 20px;
     font-weight: normal;
+
+    text-align: left;
+    padding: 4% 6%;
+    line-height: 1.5;
+    background: rgba(17,45,78,0.28); /* semi-transparent base */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); /* Safari */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    position: relative;
+    z-index: 0; /* make sure it sits above the page background */
 }
 
 .row{
@@ -140,7 +180,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 15%;
-    background: linear-gradient(#d982247a, #D98324);
+    background: linear-gradient(#112D4E, #3F72AF);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -179,12 +219,16 @@ nav ul li a:hover::after{
 #resume{
     padding: 80px 0;
     color: #fff;
+
+    
 }
 
 .main-text h1{
     font-size: 20px;
     font-weight: normal;
     margin-top: 0; 
+
+    
 }
 
 .resume-text h1{
@@ -192,16 +236,31 @@ nav ul li a:hover::after{
     font-weight: normal;
     margin-top: 0; 
 
+    padding: 4% 6%;
+    line-height: 1.5;
+    background: rgba(17,45,78,0.28); /* semi-transparent base */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); /* Safari */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    position: relative;
+    z-index: 0; /* make sure it sits above the page background */
+
+
+
 }
 
 .resume-info{
     margin-top: 40px;
+    
 }
 
 .resume-info h1{
     font-size: 35px;
     font-weight: bold;
     margin-top: 80px;
+
+    
 }
 
 .resume-info h2{
@@ -220,6 +279,8 @@ nav ul li a:hover::after{
 .resume-info p{
     font-size: 20px;
     margin-top: 10px;
+
+    
 }
 
 .resume-info ul{
@@ -231,7 +292,14 @@ nav ul li a:hover::after{
     font-size: 35px;
     font-weight: bold;
     margin-top: 80px;
+    
 }
+
+.skills h1{
+    text-align: center;
+    margin-top: 80px;
+}
+
 
 .skills ul {
     display: grid;
@@ -240,6 +308,17 @@ nav ul li a:hover::after{
     margin-top: 50px;
     display: grid; 
     list-style: none; /* Remove default list style */
+
+    padding: 4% 6%;
+    line-height: 1.5;
+    background: rgba(17,45,78,0.28); /* semi-transparent base */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); /* Safari */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    position: relative;
+    z-index: 0; /* make sure it sits above the page background */
+
 }
 
 .column h1{
@@ -258,8 +337,8 @@ nav ul li a:hover::after{
 }
 
 .column li {
-    background-color: transparent; /* Box background color */
-    border: #D98324 2px solid; /* Add a border to the box */
+    background-color: rgba(17,45,78,0.28); /* Box background color */
+    border: #112D4E 2px solid; /* Add a border to the box */
     color: #fff; /* Text color */
     padding: 10px 20px; /* Add padding inside the box */
     border-radius: 5px; /* Rounded corners */
@@ -268,17 +347,33 @@ nav ul li a:hover::after{
     margin-top: 15px;
 }
 
+.extras{
+    margin-top: 80px;
+    padding: 0% 0% 4% 6%;
+    line-height: 1.5;
+    background: rgba(17,45,78,0.28); /* semi-transparent base */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); /* Safari */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    position: relative;
+    z-index: 0; /* make sure it sits above the page background */
+}
+
 
 
 a{
-    color: #EFDCAB;
+    color: #26a7d9;
 }
 
+/*3F72AF
+
+112D4E*/
 
 .btn {
     display: inline-block;
     padding: 10px 20px; 
-    background-color: #D98324; 
+    background-color: #26a7d9; 
     color: white; 
     text-align: center; 
     text-decoration: none; 
@@ -289,7 +384,8 @@ a{
 }
 
 .btn:hover {
-    background-color: #EFDCAB; 
+    background-color: #64c1f8;
+    box-shadow: 0 10px 30px rgba(100,193,248,0.28), 0 2px 8px rgba(38,167,217,0.12) inset;
 }
 
 /* -------Contact-------- */
@@ -297,10 +393,22 @@ a{
 
 .contact-left{
     flex-basis: 35%;
+
+    padding: 4% 6%;
+    line-height: 1.5;
+    background: rgba(17,45,78,0.28); /* semi-transparent base */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); /* Safari */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    position: relative;
+    z-index: 0; /* make sure it sits above the page background */
+    
 }
 
 .contact-left p{
     margin-top: 10px;
+    
 }
 
 .contact-left p i{
@@ -348,7 +456,7 @@ a{
 }
 
 .modal-inner{
-    background: #443627;
+    background: #3F72AF;
     width: 100%;
     max-width: 1200px;
     overflow: hidden;
@@ -361,7 +469,7 @@ a{
 .modal-top{
     display: flex;
     align-items: center;
-    background: #D98324;
+    background: #112D4E;
     
 }
 
@@ -447,7 +555,7 @@ a{
 .modal-button{
     display: inline-block;
     padding: 6px 12px;
-    background: #D98324;
+    background: #112D4E;
     border: none;
     outline: none;
     border-radius: 3px;
@@ -456,7 +564,7 @@ a{
 }
 
 .modal-button:hover{
-    background: #EFDCAB;
+    background: #26a7d9;
 }
 
 
